@@ -1,22 +1,31 @@
 ![taskmaster-high-resolution-logo-black](https://github.com/D4V1D16/TaskMaster/assets/99196362/65fc96f1-c5cf-488b-bdda-f7038ce56afe)
-Eficiencia y Organización: Nuestra aplicación proporciona una plataforma intuitiva y fácil de usar que permite a los usuarios gestionar sus tareas de manera eficiente y mantenerse organizados en todo momento.
+¿Buscas una solución integral para gestionar tus tareas de manera eficiente y organizada? ¡Tenemos la respuesta perfecta para ti! Nuestro "Sistema de Gestión de Tareas" es una aplicación basada en Django, respaldada por la robustez de PostgreSQL, que ofrece una experiencia completa y sin complicaciones para manejar tus proyectos y tareas diarias.
 
-Flexibilidad: Con una amplia gama de funcionalidades, desde la creación y edición de tareas hasta el filtrado y seguimiento del progreso, nuestro sistema se adapta a las necesidades individuales de cada usuario y equipo de trabajo.
+Autenticación Segura:
+Con la seguridad como nuestra prioridad número uno, hemos integrado tokens de autenticación de usuarios para garantizar que tus datos estén protegidos en todo momento. Con una autenticación segura, puedes estar seguro de que solo las personas autorizadas tendrán acceso a tu información confidencial.
 
-Acceso Seguro: Garantizamos la seguridad de los datos mediante un sistema de autenticación de usuarios utilizando tokens de acceso, lo que asegura que solo los usuarios autorizados puedan acceder a la información confidencial.
+Funcionalidades Avanzadas:
+Desde la gestión de usuarios hasta el seguimiento de tareas, nuestro sistema cuenta con una amplia gama de funciones diseñadas para simplificar tu flujo de trabajo. Con la capacidad de registrar, iniciar sesión, actualizar y eliminar usuarios, así como acceder a una API RESTful incorporada, tienes todo lo que necesitas al alcance de tu mano.
 
-Comunicación Transparente: Facilitamos la comunicación y colaboración entre los miembros del equipo al proporcionar una visión clara del estado de las tareas y permitir comentarios y actualizaciones en tiempo real.
+API RESTful Integrada:
+Nuestra API RESTful proporciona una manera sencilla y eficiente de conectar tus datos, permitiéndote acceder, crear, actualizar y eliminar tareas con facilidad. Con una arquitectura flexible y escalable, puedes estar seguro de que nuestra aplicación se adaptará a las necesidades cambiantes de tu negocio.
 
-Productividad Mejorada: Al eliminar la necesidad de gestionar tareas de forma manual o dispersa, nuestro sistema ayuda a aumentar la productividad y a optimizar el tiempo de trabajo, permitiendo a los usuarios centrarse en lo que realmente importa.
+Aumenta tu Productividad:
+Al simplificar la gestión de tareas y mejorar la comunicación entre tu equipo, nuestro sistema te ayuda a aumentar la productividad y a alcanzar tus objetivos de manera más eficiente. Con una plataforma intuitiva y fácil de usar, puedes centrarte en lo que realmente importa: hacer avanzar tu negocio.
 
-Escalabilidad y Adaptabilidad: Diseñado con tecnologías modernas y una arquitectura flexible, nuestro sistema es altamente escalable y puede adaptarse fácilmente a medida que crece tu negocio o equipo de trabajo.
-
-Soporte Técnico Continuo: Nos comprometemos a proporcionar un soporte técnico continuo y una atención personalizada para garantizar que nuestros clientes aprovechen al máximo nuestra plataforma y resuelvan cualquier problema o inquietud de manera rápida y eficaz.
-
-Con estos objetivos, nuestro "Sistema de Gestión de Tareas" se convierte en una herramienta indispensable para cualquier equipo que busque mejorar su organización, comunicación y productividad en el día a día.
-
+No dejes que las tareas diarias te abrumen. Con nuestro "Sistema de Gestión de Tareas", puedes mantener todo bajo control y avanzar hacia el éxito con confianza. ¡Pruébalo hoy mismo y descubre la diferencia que puede hacer para ti y tu equipo!.
 
 
-Esta es la version base del programa, se aumentaran las conexiones a front end, y las validaciones JSON con JavaScript.
-Mientras este programa servira con las Urls de las APIs.
-Stay Tunned.
+
+
+
+
+
+
+
+
+
+
+
+
+Notas de Version: Esta version contiene API Restful para usuarios, tareas. Contiene tambien la autenticacion mediante tokens.Se implementara en la siguiente version el PUT de los Usuarios ya que es el unico que falta, tambien se empezara a realizar las conexiones a Front End.
