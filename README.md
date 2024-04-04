@@ -14,3 +14,9 @@ Escalabilidad y Adaptabilidad: Diseñado con tecnologías modernas y una arquite
 Soporte Técnico Continuo: Nos comprometemos a proporcionar un soporte técnico continuo y una atención personalizada para garantizar que nuestros clientes aprovechen al máximo nuestra plataforma y resuelvan cualquier problema o inquietud de manera rápida y eficaz.
 
 Con estos objetivos, nuestro "Sistema de Gestión de Tareas" se convierte en una herramienta indispensable para cualquier equipo que busque mejorar su organización, comunicación y productividad en el día a día.
+
+
+
+Esta es la version base del programa, se aumentaran las conexiones a front end, y las validaciones JSON con JavaScript.
+Mientras este programa servira con las Urls de las APIs.
+Stay Tunned.
