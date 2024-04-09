@@ -2,7 +2,7 @@
 ¿Buscas una solución integral para gestionar tus tareas de manera eficiente y organizada? ¡Tenemos la respuesta perfecta para ti! Nuestro "Sistema de Gestión de Tareas" es una aplicación basada en Django, respaldada por la robustez de PostgreSQL, que ofrece una experiencia completa y sin complicaciones para manejar tus proyectos y tareas diarias.
 
 Autenticación Segura:
-Con la seguridad como nuestra prioridad número uno, hemos integrado tokens de autenticación de usuarios para garantizar que tus datos estén protegidos en todo momento. Con una autenticación segura, puedes estar seguro de que solo las personas autorizadas tendrán acceso a tu información confidencial.
+Se implementan Tokens de Autenticacion para la creacion de Tareas en la aplicacion.
 
 Funcionalidades Avanzadas:
 Desde la gestión de usuarios hasta el seguimiento de tareas, nuestro sistema cuenta con una amplia gama de funciones diseñadas para simplificar tu flujo de trabajo. Con la capacidad de registrar, iniciar sesión, actualizar y eliminar usuarios, así como acceder a una API RESTful incorporada, tienes todo lo que necesitas al alcance de tu mano.
