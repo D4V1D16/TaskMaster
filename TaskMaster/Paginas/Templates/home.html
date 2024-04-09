@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaskMaster</title>
+        <link rel="stylesheet" href="{% static 'css/homeStyle.css' %}">
+
+    </head>
+    <body>
+        <nav>
+            <img src="logo.png" alt="Logo">
+        </nav>
+        <div class="container">
+            <h1>Hola</h1>
+            <h3>Nombre1</h3>
+            <h3>Nombre2</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Encabezado 1</th>
+                            <th>Encabezado 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <table>
+                    <!-- Tabla 2 -->
+                </table>
+                <table>
+                    <!-- Tabla 3 -->
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+    const token = localStorage.getItem('token');   
+    document.addEventListener('DOMContentLoaded', function() {
+
+        fetch("% url 'data' %", {
+            method: 'GET',
+            headers: {
+            'Content-Type': 'application/json',
+            'Authorization': localStorage.getItem('token') 
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const responseData =response.json();
+            console.log("Se han obtenido los datos del usuario",responseData);
+        })
+        .catch(error=>{
+            console.log(error);
+        });
+
+    });
+</script>
+<!--https://codepen.io/1bbnuuu/pen/rNPqQbe-->

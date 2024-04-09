@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="{% static 'css/loginStyle.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+            <form action="" method="POST" class="form" id="form">
+              {% csrf_token %}
+                <h1>Creacion de Usuario</h1>
+                {{form}}
+                <button class="button" type="submit">Crear Cuenta</button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<script>
+        const form = document.getElementById('form');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const data = {
+            'username': formData.get('usuario'),
+            'email': formData.get('email'),
+            'password': formData.get('contrasena')
+            };
+
+            const jsonData = JSON.stringify(data)
+            try {
+                const response = await fetch("{% url 'CrearUsuario'  %}", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}'
+                    },
+                    body: jsonData
+                });
+
+                if (!response.ok) {
+                    throw new Error('Error al enviar los datos al servidor');
+                } else{
+                    window.location.href = "{% url 'Log-In' %}";
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+</script>
+<!--https://codepen.io/1bbnuuu/pen/rNPqQbe-->

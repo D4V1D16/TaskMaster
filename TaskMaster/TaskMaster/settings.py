@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'Usuarios',
     'Tareas',
+    'Paginas',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -80,11 +81,11 @@ WSGI_APPLICATION = 'TaskMaster.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '#####',
-        'USER': '#####',
-        'PASSWORD' : '#######',
-        'HOST' : '######',
-        'PORT' : '#######'
+        'NAME': "TaskMaster",
+        'USER': 'postgres',
+        'PASSWORD' : 'abc123',
+        'HOST' : 'localhost',
+        'PORT' : '5432'
     }
 }
 
