@@ -25,4 +25,15 @@ No dejes que las tareas diarias te abrumen. Con nuestro "Sistema de Gestión de 
 
 
 
-Notas de Version: Esta version contiene API Restful para usuarios, tareas. Contiene tambien la autenticacion mediante tokens.Se implementara en la siguiente version el PUT de los Usuarios ya que es el unico que falta, tambien se empezara a realizar las conexiones a Front End.
+En la proxima version se implementara el Front, asi como filtrar tareas, por nombre y por fecha.
+Tambien el PUT y DELETE de los Usuarios.
+Muchas Gracias
+Stay Tunned.
+
+
+Proyecto Desarrollado por:
+David Santiago Jimenez[https://github.com/D4V1D16]
+Linkedin[]www.linkedin.com/in/davidjimenez16
+Gracias
+
+
