@@ -22,6 +22,15 @@
     </body>
 </html>
 <script>
+    function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
         const form = document.getElementById('form');
 
         form.addEventListener('submit', async (event) => {
@@ -30,12 +39,11 @@
             const formData = new FormData(form);
             const data = {
             'username': formData.get('usuario'),
-            'password': formData.get('contrasena'),
+            'password': formData.get('contrasena')
             };
-
             const jsonData = JSON.stringify(data)
             try {
-                const response = await fetch("{% url 'InicioSesion' %}", {
+                const response = await fetch("{% url 'token_obtain_pair' %}", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -48,10 +56,8 @@
                     throw new Error('Error al enviar los datos al servidor');
                 } else{
                     const responseData = await response.json();
-
-                    localStorage.setItem('token',responseData.token);
+                    setCookie('JWT',responseData.access,30);
                     window.location.href = "{% url 'Home' %}";
-
                 }
 
             } catch (error) {

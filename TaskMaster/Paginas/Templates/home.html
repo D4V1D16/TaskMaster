@@ -13,9 +13,7 @@
             <img src="logo.png" alt="Logo">
         </nav>
         <div class="container">
-            <h1>Hola</h1>
-            <h3>Nombre1</h3>
-            <h3>Nombre2</h3>
+            <h1 id="Username"></h1>
             <div class="table-container">
                 <table>
                     <thead>
@@ -43,25 +41,33 @@
     </body>
 </html>
 <script>
-    const token = localStorage.getItem('token');   
+    window.getCookie = function(name) {
+    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    if (match) return match[2];
+    }
+    
+    
+    const JWTTOKEN = getCookie('JWT');
+    
     document.addEventListener('DOMContentLoaded', function() {
-
-        fetch("% url 'data' %", {
+        fetch("{% url 'Data' %}", {
             method: 'GET',
             headers: {
             'Content-Type': 'application/json',
-            'Authorization': localStorage.getItem('token') 
+            'Authorization': 'Bearer ' + JWTTOKEN
             }
         })
         .then(response => response.json())
         .then(data => {
-            const responseData =response.json();
-            console.log("Se han obtenido los datos del usuario",responseData);
+            const dataUser = data.datos_usuario;
+            console.log(dataUser.username);
+            const elementoUsername = document.getElementById("Username");
+            elementoUsername.textContent = "Hola " + dataUser.username + " Bienvenido";
         })
         .catch(error=>{
             console.log(error);
         });
-
     });
+    
+
 </script>
-<!--https://codepen.io/1bbnuuu/pen/rNPqQbe-->

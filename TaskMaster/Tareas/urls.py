@@ -8,5 +8,4 @@ router.register('Tareas',TareasViewSet,'Tareas')
 
 urlpatterns = [
     path('',include(router.urls)),
-    #path('crearTarea'),
 ]
