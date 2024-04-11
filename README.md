@@ -32,8 +32,8 @@ Stay Tunned.
 
 
 Proyecto Desarrollado por:
-David Santiago Jimenez[https://github.com/D4V1D16]
-Linkedin[]www.linkedin.com/in/davidjimenez16
+[David Santiago Jimenez](https://github.com/D4V1D16)
+[Linkedin](www.linkedin.com/in/davidjimenez16)
 Gracias
 
 
